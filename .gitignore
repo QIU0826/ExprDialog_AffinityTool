@@ -1,0 +1,67 @@
+# IDEA 配置文件
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse 配置文件
+.classpath
+.project
+.settings/
+
+# Maven 构建输出
+target/
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# 日志文件
+logs/
+*.log
+*.log.*
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+
+# 环境变量配置文件
+.env
+.env.local
+.env.*.local
+
+# 数据库配置文件（包含敏感信息）
+*.properties
+*.conf
+
+# 测试覆盖报告
+coverage/
+.nyc_output/
+
+# 前端构建输出
+frontend/dist/
+frontend/node_modules/
+frontend/.vite/
+frontend/out/
+
+# 缓存文件
+*.cache
+*.tmp
+*.temp
+
+# 编辑器目录和文件
+.vscode/
+*.swp
+*.swo
+*~
+
+# OpenCV 相关文件
+*.dll
+*.so
+*.dylib
+
+# API密钥和配置文件
+api-keys/
