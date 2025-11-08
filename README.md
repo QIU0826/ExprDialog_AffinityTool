@@ -74,7 +74,7 @@ src/main/java/com/exprdialog/
 
 ### 3. 智能对话推荐
 - 结合对话历史、表情结果和攻略对象信息
-- 调用OpenAI生成个性化回复建议
+- 调用deepseek生成个性化回复建议
 - 根据不同性格和情绪提供多种回复选项
 
 ### 4. 好感度管理系统
@@ -92,7 +92,7 @@ src/main/java/com/exprdialog/
 3. 安装MySQL 8.0和Redis 6.2.6+
 4. 安装OpenCV 4.8.0并配置环境变量
 5. 申请百度AI开放平台账号并获取API Key和Secret Key
-6. 申请OpenAI账号并获取API Key
+6. 申请deepseek账号并获取API Key
 
 ### 后端配置
 
@@ -108,19 +108,19 @@ cd expr-dialog-affinity-tool
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/expr_dialog?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
-    username: root
-    password: 1234
+    username: 
+    password: 
 ```
 
 3. 配置API Key
-在`application.yml`中配置百度AI和OpenAI的API Key：
+在`application.yml`中配置百度AI和deepseek的API Key：
 ```yaml
 baidu:
   ai:
-    api-key: 7bmTiHT1L5jB90rQN2sLhKj6
-    secret-key: NTsEEfnOfiyz5coegfRE70A3a5gVkrM8
+    api-key:
+    secret-key: 
 
-openai:
+ai:
   api-key: your_openai_api_key
 ```
 
@@ -175,7 +175,7 @@ npm run dev
 
 ## 注意事项
 
-1. 请确保已正确配置百度AI和OpenAI的API Key，否则表情识别和回复推荐功能将无法使用
+1. 请确保已正确配置百度AI和deepseek的API Key，否则表情识别和回复推荐功能将无法使用
 
 2. 首次使用时需要授予浏览器访问摄像头的权限
 
@@ -191,5 +191,4 @@ npm run dev
 
 如有任何问题或建议，请通过以下方式联系：
 
-- 邮箱：your_email@example.com
-- GitHub：https://github.com/yourusername/expr-dialog-affinity-tool
+- 邮箱：2889386774@qq.com
